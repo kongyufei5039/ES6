@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>reduce</title>
+    <script type="text/javascript">
+        const numbers = [10, 20, 30, 40];
+        const doubleOver50 = numbers.reduce((finalList, num) => {
+            num = num * 2;
+
+            if(num  > 50){
+                finalList.push(num);
+            }
+            return finalList;
+        }, []);
+        console.log(doubleOver50);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
